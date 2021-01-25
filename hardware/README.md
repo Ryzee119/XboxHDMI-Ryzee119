@@ -6,6 +6,9 @@
 * [XboxHDMI PCB](https://tracespace.io/view/?boardUrl=https://github.com/Ryzee119/XboxHDMI-Ryzee119/blob/master/hardware/gerbers_xboxhdmi.zip?raw=true)
 * [FlatFlex PCB](https://tracespace.io/view/?boardUrl=https://github.com/Ryzee119/XboxHDMI-Ryzee119/blob/master/hardware/gerbers_conex_focus_flex.zip?raw=true)
 
+## 3D Render
+* [Fusion 360](https://a360.co/2KIBkxm)
+
 ### Flat Flex Properties
 * 2 Layers
 * Polyimide Flex
