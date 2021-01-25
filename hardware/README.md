@@ -6,6 +6,10 @@
 * [XboxHDMI PCB](https://tracespace.io/view/?boardUrl=https://github.com/Ryzee119/XboxHDMI-Ryzee119/blob/master/hardware/gerbers_xboxhdmi.zip?raw=true)
 * [FlatFlex PCB](https://tracespace.io/view/?boardUrl=https://github.com/Ryzee119/XboxHDMI-Ryzee119/blob/master/hardware/gerbers_conex_focus_flex.zip?raw=true)
 
+## View Board and Schematic
+* [Board](https://a360.co/3of4zFJ)
+* [Schematic](https://a360.co/2LYpuQg)
+
 ## 3D Render
 * [Fusion 360](https://a360.co/2KIBkxm)
 
