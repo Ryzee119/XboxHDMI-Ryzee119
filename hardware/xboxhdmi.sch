@@ -20322,6 +20322,7 @@ Source: www.kingbright.com</description>
 <part name="R17" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="887R 1%"/>
 <part name="GND18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND20" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="1V8" library="my-library" library_urn="urn:adsk.eagle:library:7078210" deviceset="SMD2" device="" package3d_urn="urn:adsk.eagle:package:7737318/5"/>
 </parts>
 <sheets>
 <sheet>
@@ -20331,7 +20332,7 @@ Source: www.kingbright.com</description>
 Current limited to 100mA with MIC2091
 Provides reverse current protection
 Meets HDMI 5V Source Requirement</text>
-<text x="260.35" y="-25.4" size="2.54" layer="94">ogXboxHDMI</text>
+<text x="260.35" y="-25.4" size="2.54" layer="94">XboxHDMI-Ryzee119</text>
 <text x="260.35" y="-30.48" size="2.54" layer="94">August 2019</text>
 <text x="260.35" y="-20.32" size="2.54" layer="94">BY RYZEE119</text>
 <text x="294.64" y="-35.56" size="2.54" layer="94">0</text>
@@ -21193,12 +21194,11 @@ Meets HDMI 5V Source Requirement</text>
 <rectangle x1="221.742" y1="-20.2184" x2="224.0788" y2="-20.1168" layer="94"/>
 <rectangle x1="222.1484" y1="-20.1168" x2="223.774" y2="-20.0152" layer="94"/>
 <text x="297.18" y="-13.97" size="1.9304" layer="94" align="center-right">Original Xbox 100% Digital HDMI</text>
-<text x="297.18" y="-10.16" size="1.9304" layer="94" align="center-right">https://github.com/Ryzee119/OGXboxHDMI</text>
+<text x="297.18" y="-10.16" size="1.9304" layer="94" align="center-right">https://github.com/Ryzee119/XboxHDMI-Ryzee119</text>
 <text x="123.19" y="170.18" size="1.778" layer="97">SWD Programming
 Header</text>
 <text x="217.17" y="171.45" size="1.778" layer="97">5V to 3.3V@150mA
 5V to 1.8V@150mA</text>
-<text x="279.4" y="210.82" size="1.778" layer="97">VCC=1.8V</text>
 <text x="213.36" y="208.28" size="2.54" layer="97">POWER SUPPLIES</text>
 <text x="69.85" y="208.28" size="2.54" layer="97">HDMI CONTROLLER</text>
 <text x="68.58" y="147.32" size="2.54" layer="97">HDMI BRIDGE</text>
@@ -21538,6 +21538,9 @@ FFC to Xbox</text>
 </instance>
 <instance part="GND20" gate="1" x="-7.62" y="-15.24" smashed="yes">
 <attribute name="VALUE" x="-10.16" y="-17.78" size="1.778" layer="96"/>
+</instance>
+<instance part="1V8" gate="1" x="139.7" y="128.27" smashed="yes" rot="R270">
+<attribute name="VALUE" x="136.398" y="129.413" size="1.778" layer="96" rot="R270"/>
 </instance>
 </instances>
 <busses>
@@ -22186,11 +22189,8 @@ FFC to Xbox</text>
 <wire x1="124.46" y1="116.84" x2="124.46" y2="119.38" width="0.1524" layer="91"/>
 <junction x="124.46" y="116.84"/>
 <pinref part="C15" gate="G$1" pin="1"/>
-<wire x1="129.54" y1="124.46" x2="132.08" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="124.46" x2="139.7" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="124.46" x2="147.32" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="124.46" x2="154.94" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="154.94" y1="124.46" x2="162.56" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="124.46" x2="162.56" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="124.46" x2="177.8" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="124.46" x2="180.34" y2="124.46" width="0.1524" layer="91"/>
 <junction x="177.8" y="124.46"/>
@@ -22207,7 +22207,9 @@ FFC to Xbox</text>
 <pinref part="L3" gate="G$1" pin="1"/>
 <label x="129.54" y="124.46" size="1.778" layer="95"/>
 <wire x1="124.46" y1="121.92" x2="127" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="127" y1="124.46" x2="129.54" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="127" y1="124.46" x2="132.08" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="1V8" gate="1" pin="P"/>
+<wire x1="139.7" y1="125.73" x2="139.7" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="AVDD" class="0">
@@ -22223,7 +22225,6 @@ FFC to Xbox</text>
 <junction x="124.46" y="132.08"/>
 <pinref part="U2" gate="G$1" pin="AVDD@1"/>
 <pinref part="C14" gate="G$1" pin="1"/>
-<wire x1="129.54" y1="139.7" x2="132.08" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="139.7" x2="139.7" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="139.7" x2="147.32" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="139.7" x2="154.94" y2="139.7" width="0.1524" layer="91"/>
@@ -22247,7 +22248,7 @@ FFC to Xbox</text>
 <pinref part="L2" gate="G$1" pin="1"/>
 <label x="129.54" y="139.7" size="1.778" layer="95"/>
 <wire x1="124.46" y1="137.16" x2="127" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="127" y1="139.7" x2="129.54" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="127" y1="139.7" x2="132.08" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+5V" class="0">
