@@ -65,8 +65,8 @@ int main(void)
 
     //Clock Delay adjust.
     error |= adv7511_update_register(&hi2c1, 0xD0, 0b10000000, 0b10000000);
-    error |= adv7511_update_register(&hi2c1, 0xD0, 0b01110000, 0 << 4); //0 to 6, 3 = no delay
-    error |= adv7511_update_register(&hi2c1, 0xBA, 0b11100000, 0 << 5);
+    error |= adv7511_update_register(&hi2c1, 0xD0, 0b01110000, 3 << 4); //0 to 6, 3 = no delay
+    error |= adv7511_update_register(&hi2c1, 0xBA, 0b11100000, 3 << 5);
 
     //Must be 11 for ID=5 (No sync pulse)
     error |= adv7511_update_register(&hi2c1, 0xD0, 0b00001100, 0b00001100);
@@ -229,7 +229,7 @@ int main(void)
                 printf("Set timing for 720p 16:9\r\n");
                 //Infoframe output aspect ratio default to 16:9
                 error |= adv7511_update_register(&hi2c1, 0x56, 0b00110000, 0b00100000);
-                ddr_edge = 0;
+                ddr_edge = 1;
                 hs_delay = 299; //259?
                 vs_delay = 25;
                 active_w = 1280;
