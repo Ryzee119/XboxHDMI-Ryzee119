@@ -20326,13 +20326,7 @@ Source: www.kingbright.com</description>
 <sheets>
 <sheet>
 <plain>
-<text x="276.86" y="195.58" size="1.778" layer="91">Inductor:
-TDK MPZ1608S221A</text>
-<text x="276.86" y="187.96" size="1.778" layer="91">10uf capacitor
-C3216X5R1C106M</text>
-<text x="205.74" y="147.32" size="1.778" layer="91">1V8</text>
-<text x="276.86" y="180.34" size="1.778" layer="91">100uF capacitor
-493-14561-6-ND</text>
+<text x="198.12" y="149.86" size="1.778" layer="97">VCC=1V8</text>
 <text x="146.05" y="1.27" size="1.778" layer="97">5V supply to HDMI Connector
 Current limited to 100mA with MIC2091
 Provides reverse current protection
@@ -21208,7 +21202,6 @@ Header</text>
 <text x="213.36" y="208.28" size="2.54" layer="97">POWER SUPPLIES</text>
 <text x="69.85" y="208.28" size="2.54" layer="97">HDMI CONTROLLER</text>
 <text x="68.58" y="147.32" size="2.54" layer="97">HDMI BRIDGE</text>
-<text x="276.86" y="203.2" size="1.778" layer="91">Temp Notes:</text>
 <text x="-49.53" y="111.76" size="2.54" layer="97" rot="R90" align="bottom-right">Molex
 0151660207
 20 POS FFC 0.50mm, 2"
