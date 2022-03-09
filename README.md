@@ -1,6 +1,6 @@
 # Original Xbox 100% Digital HDMI (Prototype)
 
-**Note: This is a 'working' but unfinished prototype. I don't plan to improve this further. See https://makemhz.com/products/xboxhd for a properly finished product with may more features.**
+**Note: This is a 'working' but unfinished prototype. I don't plan to improve this further. See https://makemhz.com/products/xboxhd for a properly finished product with way more features.**
 
 * A few HDMI captures taken from this board are here: https://imgur.com/a/OkmB1Vs
 * This is a prototype 100% digital Original Xbox HDMI addon PCB. It taps into the GPU pixel bus before it enters the analog video encoder and converts it to a HDMI compliant signal.
