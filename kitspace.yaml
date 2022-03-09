@@ -1,4 +1,7 @@
 gerbers: .kitspace
 bom: .kitspace/bom.csv
 color: green
+eda:
+  type: eagle
+  pcb: hardware/xboxhdmi.brd
 site: https://github.com/Ryzee119/XboxHDMI-Ryzee119
