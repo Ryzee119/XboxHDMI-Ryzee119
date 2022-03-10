@@ -9,7 +9,7 @@
 * This is a prototype board which should work on all Xbox revisions however a new flex would need to be designed to accomodate v1.6 motherboards with an Xcalibur encoder.
 * 480i does not work reliably. Use a force 480p BIOS.
 * The xbox kernels video modes are not compliant to proper HDMI signalling (v/hsync, porch delays etc). This does not have the ability to correct that. If your display is picky it may just not display anything.
-* Currently the MakeMHZ solution is recommended. https://makemhz.com/products/xboxhd. It is a completely independent design which has been much more tested and with more features.
+* Currently the MakeMHz solution is recommended. https://makemhz.com/products/xboxhd. It is a completely independent design which has been much more tested and with more features.
 
 ## Bill of materials
 * See [Kitspace](https://kitspace.org/boards/github.com/ryzee119/XboxHDMI-Ryzee119/).
